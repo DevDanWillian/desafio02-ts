@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "react-router-dom": ["node_modules/react-router-dom"]
+    },
     "target": "es5",
     "lib": [
       "dom",

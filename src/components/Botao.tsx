@@ -1,11 +1,17 @@
-import { login } from '../services/login';
-
+import { MouseEventHandler } from 'react';
 import {Button} from '@chakra-ui/react'
+import { Login } from '../services/Login';
 
-export const Botao = () => {
+interface BotaoProps {
+  onClick: MouseEventHandler
+}
+
+export const Botao = ({onClick }: BotaoProps) => {
+
+
   return (
-            <Button onClick={login} colorScheme='teal' size='sm' width='100%' marginTop='5px'>
-              Button
+            <Button onClick={onClick} colorScheme='teal' size='sm' width='100%' marginTop='5px'>
+              Login
             </Button>
   )
 }

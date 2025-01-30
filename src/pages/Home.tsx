@@ -1,10 +1,9 @@
 import React, {
-  MouseEventHandler,
   useContext,
   useState,
   KeyboardEventHandler,
 } from "react";
-import { ChakraProvider, Box, Button, Center, Input } from "@chakra-ui/react";
+import { ChakraProvider, Box, Center, Input } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 
 import { Botao } from "../components/Botao";
@@ -18,7 +17,7 @@ export const Home = () => {
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>('')
   const { setIsLoggedIn } = useContext(AppContext);
-  const [show, setShow] = useState<boolean>(false);
+  const [show] = useState<boolean>(false);
   const navigate = useNavigate();
 
   const validateUser = async (email: string, password:string) => {

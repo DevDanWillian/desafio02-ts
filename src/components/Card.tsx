@@ -1,8 +1,7 @@
 import React from "react";
-import { useState } from "react";
 
-import { ChakraProvider, Box, Center, Input } from "@chakra-ui/react";
-import { Botao } from "./Botao";
+import { ChakraProvider, Box, } from "@chakra-ui/react";
+
 
 export const Card = ({children}:any) => {
 

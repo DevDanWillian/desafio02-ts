@@ -1,7 +1,7 @@
 import { AppContext } from "../AppContext";
 
 import React, { useContext } from "react";
-import { Route, Routes, Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Flex, Box, Button, ChakraProvider, Text } from "@chakra-ui/react";
 import { changeLocalStorage } from "src/services/MyStorage";
 

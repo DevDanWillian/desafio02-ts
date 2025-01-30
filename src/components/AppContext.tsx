@@ -1,8 +1,6 @@
 import React, { createContext, useEffect, useState } from "react";
 
-import { Conta } from "../pages/Conta";
-import { api } from "src/api";
-import { getAllLocalStorage, createLocalStorage } from "src/services/MyStorage";
+import { getAllLocalStorage, } from "src/services/MyStorage";
 
 interface IAppContext {
   user: string;

@@ -1,5 +1,4 @@
-import { Text, Button, Box } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { Text, Box } from "@chakra-ui/react";
 import { conta } from "src/api";
 
 export const ContaInfo = () => {

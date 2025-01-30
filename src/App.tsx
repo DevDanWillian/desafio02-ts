@@ -1,6 +1,6 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { ChakraProvider, Box, Button } from "@chakra-ui/react";
+import { BrowserRouter } from "react-router-dom";
+import { ChakraProvider, Box} from "@chakra-ui/react";
 
 
 import { Layout } from "./components/Layout";

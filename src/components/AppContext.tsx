@@ -16,8 +16,8 @@ export const AppContextProvider = ({ children }: any) => {
   const storagelogin = getAllLocalStorage();
   useEffect(() =>{
       if (storagelogin) {
-    const { login } = JSON.parse(storagelogin);
-    setIsLoggedIn(login);
+    const { logar } = JSON.parse(storagelogin);
+    setIsLoggedIn(logar);
   }
   }, [])
 

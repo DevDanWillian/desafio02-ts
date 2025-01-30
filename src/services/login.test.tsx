@@ -1,5 +1,5 @@
 
-import { Login } from "../services/Login"
+import { Logar } from "../services/Logar"
 
 /**jest.mock("react", () => ({
   ...jest.requireActual("react"),
@@ -14,19 +14,19 @@ jest.mock('react-router-dom', () => ({
   }));**/
   
 
-describe("Login", () => {
+describe("Logar", () => {
   const mockEmail = "test@conta.com";
   const mockPassword = '123456'
 
   it("Deve exibir um alert com boas vindas caso o email seja válido.", async () => {
-    const response = await Login(mockEmail, mockPassword);
+    const response = await Logar(mockEmail, mockPassword);
 
     expect(response).toBeTruthy()
     
   });
 
   it("Deve exibir um erro caso o email seja inválido", async () => {
-    const response = await Login("invalidEmail", 'invalidKey');
+    const response = await Logar("invalidEmail", 'invalidKey');
     expect(response).toBeFalsy();
   });
 });

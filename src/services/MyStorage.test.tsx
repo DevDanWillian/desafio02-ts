@@ -5,7 +5,7 @@ import {
 } from "./MyStorage";
 
 const dioBank = {
-  login: false,
+  logar: false,
 };
 
 describe("MyStorage", () => {

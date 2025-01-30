@@ -3,7 +3,6 @@ import { useParams, useNavigate } from "react-router-dom";
 import { api } from "../api";
 import {
   ChakraProvider,
-  Box,
   Center,
   SimpleGrid,
   Spinner,

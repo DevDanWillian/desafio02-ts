@@ -6,7 +6,7 @@ import React, {
 import { ChakraProvider, Box, Center, Input } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 
-import { Login } from "../services/Login";
+import { Logar } from "../services/Logar";
 import { AppContext } from "src/components/AppContext";
 import { changeLocalStorage } from "src/services/MyStorage";
 
@@ -25,13 +25,13 @@ export const Home = () => {
     if ((!email && !password) || (email && !password)) {
       return alert("Algo inesperado aconteceu");
     }
-    const loggedIn = await Login(email, password);
+    const loggedIn = await Logar(email, password);
     if(!loggedIn){
       return ('Dado incorreto')
     }
 
     setIsLoggedIn(true);
-    changeLocalStorage({ login: true });
+    changeLocalStorage({ logar: true });
     navigate("/conta/1");
   };
 

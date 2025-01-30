@@ -6,11 +6,12 @@ import React, {
 import { ChakraProvider, Box, Center, Input } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 
-import { Botao } from "../components/Botao";
 import { Login } from "../services/Login";
-import { Card } from "../components/Card";
 import { AppContext } from "src/components/AppContext";
 import { changeLocalStorage } from "src/services/MyStorage";
+
+import { Botao } from "../components/Botao";
+import { Card } from "../components/Card";
 
 
 export const Home = () => {

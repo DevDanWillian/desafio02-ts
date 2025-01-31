@@ -19,6 +19,7 @@ export const AppContextProvider = ({ children }: any) => {
     const { logar } = JSON.parse(storagelogin);
     setIsLoggedIn(logar);
   }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
 
